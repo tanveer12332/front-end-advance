@@ -1,0 +1,24 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px);width: 200px;height:200px;background:#654;display: flex; }
+:root {
+  --mainColor: red;
+}
+
+a {
+  color: var(--mainColor);
+  display: block;
+}
+
+a {
+  color: color(white alpha(-10%));
+}
+
+  a:hover {
+    color: color(white blackness(80%));
+  }

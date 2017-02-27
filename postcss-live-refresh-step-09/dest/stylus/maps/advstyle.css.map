@@ -1,0 +1,1 @@
+{"version":3,"sources":["advstyle.styl"],"names":[],"mappings":"AAAA,KACI,QAAQ,KACR,cAAc,EACd,MAAM,KACN,WAAY,OACZ,MAAO","file":"advstyle.css","sourceRoot":"/source/","sourcesContent":[".box\r\n    padding:10px\r\n    border-radius:0px\r\n    width:100%\r\n    text-align: center\r\n    color: white"]}

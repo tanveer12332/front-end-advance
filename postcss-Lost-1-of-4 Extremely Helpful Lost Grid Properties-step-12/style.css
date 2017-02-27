@@ -1,0 +1,66 @@
+/*LostGrid is a powerful grid system built in PostCSS that works with any preprocessor and even vanilla CSS. You can think of it like the Autoprefixer of grid systems.*/
+
+/*Learn github repo*/
+/*https://github.com/peterramsing/lost*/
+@lost cycle none;
+
+body{
+	 margin:0;
+	 padding:0;
+	 background:#f5f5f5;
+	 transform: translateX(10px);
+	 transition:1s;
+ }
+
+.gird-item{
+	lost-column:1/4;
+	background: #333;
+	height: 200px;
+	margin-bottom: 10px;
+	color:#fff;
+	lost-align:center;
+	font-size: 24px;
+}
+.gird-item p{
+	margin: 0px;
+}
+.grid-one{
+  lost-center:80%;
+	padding: 10px;
+	background: #ccc;
+  lost-utility:clearfix;
+}
+.nested-grid-item{
+  background: lightgreen;
+  height: 50px;
+  margin-bottom: 10px;
+  lost-align:center;
+}
+
+/*
+@media screen and (min-width: 400px){
+	gird-item{
+		lost-column:1;
+	}
+}
+@media screen and (min-width: 900px){
+	gird-item{
+		lost-column:1/2;
+	}
+}
+@media screen and (min-width: 1300px){
+	gird-item{
+		lost-column:1/4;
+	}
+}
+*/
+@media (max-width: 768px) {
+	.gird-item{
+		lost-column:1/2 2;
+	}
+}
+@media (max-width: 480px) {
+	.gird-item{
+		lost-column:1;
+	}
+}
